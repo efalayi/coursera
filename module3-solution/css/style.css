@@ -1,0 +1,103 @@
+body{
+	font-size: 16px;
+	color: #333;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+/*header*/
+#main-header{
+	background-color: teal;
+}
+.navbar-brand a{
+	text-decoration: none;
+}
+.navbar-brand h1{
+	font-size: 1.5em;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #fff;
+}
+.navbar-default .navbar-toggle.collapsed{
+	border: 2px solid black;
+	background-color: #f0f8ff;
+}
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: black;
+}
+.navbar-default .navbar-toggle:not(.collapsed){
+	border: 2px solid #fff;
+	background-color: teal;
+}
+.navbar-default .navbar-toggle:not(.collapsed) .icon-bar{
+	background-color: #fff;
+}
+
+/*dropdown menu*/
+#collapsable-nav.navbar-collapse{
+	padding-bottom: 0;
+}
+#collapsable-nav, #nav-list li{
+	border-bottom: 1px solid teal;
+}
+#nav-list li:last-child{
+	border-bottom: 0;
+}
+
+/*main content*/
+#main-content h2{
+	margin-bottom: 1em;
+}
+#single-section{
+	border: 1px solid #ccc;
+	background-color: #5f9ea0;
+	height: 1000px;
+}
+#main-content > p{
+	text-align: right;
+	font-size: 0.7em;
+	margin-top: 1em;
+}
+#main-content > p:hover{
+	font-weight: bold;
+}
+
+/*large screens*/
+@media (min-width: 1200px){
+	#collapsable-nav{
+		border: 0;
+	}
+}
+
+/*medium devices*/
+@media (min-width: 992px) and (max-width: 1199px){
+	#collapsable-nav{
+		border: 0;
+	}
+}
+
+/*small devices*/
+@media (min-width: 768px) and (max-width: 991px){
+	#collapsable-nav{
+		border: 0;
+	}
+}
+
+/*extra small devices*/
+@media (max-width: 767px){
+	.extra-padding{
+		padding-left: 5em;
+		padding-right: 5em;
+	}
+	#collapsable-nav{
+		text-align: center;
+		background-color: #f0f8ff;
+		opacity: 1;
+	}
+}
+
+/*super extra small devices*/
+@media (max-width: 479px){
+	.extra-padding{
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+}
