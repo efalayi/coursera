@@ -1,0 +1,13 @@
+ .message { font-size: 1.3em; font-weight: bold; }
+ .form-group > p{
+	 	color: blue;
+	}
+
+ /*medium and large devices*/
+ @media (min-width: 768px){
+ 	.container{
+ 		width: 70%;
+ 	}
+ }
+
+ 

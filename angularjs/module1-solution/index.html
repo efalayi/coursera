@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="LunchCheck">
+  <head>
+    <title>Lunch Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    
+  </head>
+<body>
+   <div class="container" ng-controller="LunchCheckController">
+     <h1>Lunch Checker</h1>
+         <div class="form-group">
+         <p><strong>Note: </strong>Each dish should be separated with a comma. Any space between two commas (i.e , ,) renders item(or data) as invalid.</p>
+          <input id="lunch-menu" type="text"
+             placeholder="List comma separated dishes you usually have for lunch"
+             class="form-control" ng-model="userInput" required ng-style="border">
+         </div>
+         <div class="form-group">
+             <button class="btn btn-default" ng-click="check()">Check If Too Much</button>
+         </div>
+         <div class="form-group message" ng-style="msgColor">
+           {{message}}
+         </div>
+   </div>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
