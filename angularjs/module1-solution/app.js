@@ -39,7 +39,7 @@
 						}
 					}
 					numberOfValidDishes= validDishes.length;
-					$scope.message= showResult(numberOfValidDishes);
+					showResult(numberOfValidDishes);
 					if (numberOfValidDishes == 0) {
 						$scope.setColor("red");
 					}
@@ -49,33 +49,35 @@
 					
 				}	
 			}
-		}
 
-// check if empty
-		function isEmpty(input){
-			return (input =="" || input == " " || input == null);
-		}
+		// check if empty
+			function isEmpty(input){
+				return (input =="" || input == " " || input == null);
+			}
 
-// get items
-		function getItems(input){
-			var items= input.split(",");
-			return items;
-		}
+		// get items
+			function getItems(input){
+				var items= input.split(",");
+				return items;
+			}
 
-// display result
-		function showResult(len){
-			var msg= ["No valid data", "Enjoy!", "Too much!"];
-			switch(len){
-				case 0:
-					return msg[0];
-					break;
-				case 1:
-				case 2:
-				case 3:
-					return	msg[1];
-					break;
-				default:
-					return msg[2];
+		// display result
+			function showResult(len){
+				var msg= ["No valid data", "Enjoy!", "Too much!"];
+				switch(len){
+					case 0:
+						$scope.message= msg[0];
+						break;
+					case 1:
+					case 2:
+					case 3:
+						$scope.message= msg[1];
+						break;
+					default:
+						$scope.message= msg[2];
+				}
 			}
 		}
+
+
 })();
