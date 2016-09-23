@@ -1,0 +1,20 @@
+.emptyMessage, .completeMessage{
+	font-weight: bold;
+  font-size: 1.2em;
+}
+.emptyMessage {
+  color: red;
+}
+.completeMessage {
+  color: green;
+}
+li {
+  margin-bottom: 7px;
+  font-size: 1.2em;
+}
+li > button {
+  margin-left: 6px;
+}
+button > span {
+  color: green;
+}

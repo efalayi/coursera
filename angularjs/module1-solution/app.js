@@ -22,6 +22,7 @@
 				$scope.border.borderColor= color;
 			}
 
+// call this function when button is click
 			$scope.check= function(){
 				var validDishes=[];
 				var numberOfValidDishes;
